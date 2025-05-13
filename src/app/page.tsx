@@ -1,13 +1,10 @@
-import { Button } from '@/components/ui/Button';
-import { ThemeSwitcher } from '@/components/ui/ThemeSwitcher';
+import { Container } from '@/components/layout/Container';
 
 export default function Home() {
   return (
-    <main>
-      <ThemeSwitcher />
-      <h1>Мое резюме</h1>
-      <Button variant="primary">Привет</Button>
-      <Button variant="secondary">Кнопка</Button>
-    </main>
+    <Container>
+      <h1>Добро пожаловать!</h1>
+      <p>Здесь будет основное содержимое вашего резюме.</p>
+    </Container>
   );
 }

@@ -1,8 +1,12 @@
 import { Providers } from './providers';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 import type { Metadata } from 'next';
 
+import './globals.css';
+
 export const metadata: Metadata = {
-  title: 'Резюме Дениса Атюшева',
+  title: 'Денис Атюшев | Frontend-разработчик',
 };
 
 export default function RootLayout({
@@ -11,10 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ru">
-      <body>
+    <html lang="ru" suppressHydrationWarning>
+      <body className="root-layout">
         <Providers>
-          {children}
+          <Header />
+          <main className="main-content">
+            {children}
+          </main>
+        <Footer />
         </Providers>
       </body>
     </html>
