@@ -1,0 +1,29 @@
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contactInfo {
+  padding: 20px;
+  background: var(--color-bg-dark);
+  border-radius: 8px;
+}
+
+.contactInfo p {
+  margin: 15px 0;
+  color: var(--color-text-light);
+}
+
+.contactForm {
+  padding: 20px;
+  background: var(--color-bg-dark);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+}
