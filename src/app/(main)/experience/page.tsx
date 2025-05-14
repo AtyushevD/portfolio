@@ -1,4 +1,4 @@
-import { ExperienceTimeline } from '@/components/experience/ExperienceTimeline';
+import { ExperienceTimeline } from '@/components/experience';
 import { EXPERIENCE } from '@/lib/experience';
 import { Container } from '@/components/layout/Container';
 
