@@ -58,23 +58,6 @@
   font-size: 1.1rem;
 }
 
-.level {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--color-border);
-}
-
-.dot.filled {
-  background: var(--color-primary);
-}
-
 .category {
   font-size: 0.8rem;
   color: var(--color-text-light);
@@ -82,4 +65,19 @@
   padding: 3px 8px;
   background: rgba(37, 99, 235, 0.1);
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter {
+    width: 100%;
+  }
 }

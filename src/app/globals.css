@@ -1,5 +1,9 @@
 @import '../styles/colors.css';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -33,4 +37,20 @@ h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
 }

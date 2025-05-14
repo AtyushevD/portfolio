@@ -78,3 +78,17 @@
   border-radius: 20px;
   font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .dot {
+    left: -20px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}

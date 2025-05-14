@@ -12,7 +12,7 @@ export const sendToTelegram = async (data: {
     const response = await fetch(
       `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${TELEGRAM_CHAT_ID}&text=${text}&parse_mode=HTML`,
       {
-        method: 'GET' // Меняем на GET-запрос
+        method: 'GET'
       }
     );
 

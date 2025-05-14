@@ -66,3 +66,22 @@
 .hero {
   animation: fadeIn 0.8s ease-out forwards;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

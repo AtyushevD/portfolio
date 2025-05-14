@@ -1,13 +1,67 @@
-.switcher {
-  background: none;
+.switch {
+  position: relative;
+  width: 60px;
+  height: 32px;
   border: none;
+  background: none;
   cursor: pointer;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  color: var(--color-text);
-  transition: transform 0.3s ease;
+  padding: 0;
+  overflow: visible;
 }
 
-.switcher:hover {
-  transform: scale(1.1);
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.1),
+    -3px -3px 6px rgba(255, 255, 255, 0.8);
+  transition: all 0.4s ease;
+}
+
+.slider.dark {
+  background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+  box-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.3),
+    -3px -3px 6px rgba(70, 70, 70, 0.2);
+}
+
+.icons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.icon {
+  color: var(--color-text-light);
+  transition: all 0.4s ease;
+  z-index: 1;
+  font-size: 16px;
+}
+
+.icon.active {
+  color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+.slider::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.slider.dark::before {
+  transform: translateX(28px);
+  background: #333;
 }
