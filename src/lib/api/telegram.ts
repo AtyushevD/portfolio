@@ -17,7 +17,8 @@ export const sendToTelegram = async (data: {
     );
 
     return response.ok;
-  } catch (error) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  } catch (e) {
     // console.error('Ошибка отправки:', error);
     return false;
   }
