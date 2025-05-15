@@ -5,6 +5,7 @@
   --color-text: #1e293b;
   --color-bg: #ffffff;
   --color-border: #e2e8f0;
+  --color-bg-card: #f8f9fa;
 }
 
 [data-theme="dark"] {
@@ -12,4 +13,5 @@
   --color-text: #f8fafc;
   --color-bg: #0f172a;
   --color-border: #334155;
+  --color-bg-card: #0c1422;
 }
