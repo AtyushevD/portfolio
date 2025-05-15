@@ -1,6 +1,7 @@
 import { Providers } from './providers';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { FlashlightEffect } from '@/components/layout/Flashlight';
 import type { Metadata } from 'next';
 
 import './globals.css';
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className="root-layout">
         <Providers>
           <Header />
+          <FlashlightEffect />
           <main className="main-content">
             {children}
           </main>

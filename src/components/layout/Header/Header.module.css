@@ -57,11 +57,10 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 30%;
     height: 100vh;
     background: var(--color-bg);
     flex-direction: column;
-    justify-content: center;
     gap: 30px;
     padding: 80px 20px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
